@@ -32,13 +32,15 @@ public class MapProgram {
         System.out.println("===================================");
 
 
-        languages.remove("Lisp");
+        //languages.remove("Lisp");
         if(languages.remove("Algo","a family of algorithmic languages")){
             System.out.println("Algo removed");
         }
         else{
             System.out.println("Algo not removed");
         }
+        System.out.println(languages.replace("Lisp","a functional programming language with imperative features"));
+        System.out.println(languages.replace("Scala","this will not be added"));//Doesn't exist
 
         for(String key : languages.keySet()){
             System.out.println(key + " : " + languages.get(key));
